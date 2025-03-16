@@ -98,8 +98,8 @@ A **staging table (`DataStaging`)** is used for importing data from a CSV file. 
 ## Provided scripts 
 1. `CityTour_function_GeographyToJson.sql` - function needs to be created in database as it's used to parse geography data to json
 2. `CityTour_function_GeometryToJson.sql` - function needs to be created in database as it's used to parse geography data to json
-3. `CityTour_procedure.sql` - procedure that generated final json data
-4. `CityTour_queries.sql` - script with test execution of rocedure in various situation
+3. `CityTour_procedure.sql` - procedure that generates final json data
+4. `CityTour_queries.sql` - script with test execution of procedure in various situation
    
 ## Spatial Indexing
 A **spatial index (`SPIX_Geocodes_Point`)** is created on the `Point` column in the `LocationGeometry` table to optimize geographic queries.
