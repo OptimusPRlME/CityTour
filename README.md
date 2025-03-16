@@ -87,7 +87,8 @@ Links tags to specific locations.
 - `TagID` (Foreign Key referencing `Tag.ID`)
 
 ## Installation
-To set up the database, execute the provided SQL script in **SQL Server Management Studio (SSMS)** or any compatible database system that supports **T-SQL**.
+To set up the database, execute the provided SQL script in **SQL Server Management Studio (SSMS)** or any compatible database system that supports **T-SQL**,
+or restore provided backup file.
 
 ## Importing Data
 A **staging table (`DataStaging`)** is used for importing data from a CSV file. To import data:
