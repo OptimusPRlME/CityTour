@@ -87,7 +87,7 @@ Links tags to specific locations.
 - `TagID` (Foreign Key referencing `Tag.ID`)
 
 ## Installation
-To set up the database, execute the provided SQL script in **SQL Server Management Studio (SSMS)** or any compatible database system that supports **T-SQL**,
+To set up the database, execute the provided SQL script `CityTour_install.sql` in **SQL Server Management Studio (SSMS)** or any compatible database system that supports **T-SQL**,
 or restore provided backup file.
 
 ## Importing Data
@@ -95,6 +95,12 @@ A **staging table (`DataStaging`)** is used for importing data from a CSV file. 
 1. Place the CSV file (`phoenix.csv`) in `C:\DATA\`.
 2. Run the `BULK INSERT` command provided in the script.
 
+## Provided scripts 
+1. `CityTour_function_GeographyToJson.sql` - function needs to be created in database as it's used to parse geography data to json
+2. `CityTour_function_GeometryToJson.sql` - function needs to be created in database as it's used to parse geography data to json
+3. `CityTour_procedure.sql` - procedure that generated final json data
+4. `CityTour_queries.sql` - script with test execution of rocedure in various situation
+   
 ## Spatial Indexing
 A **spatial index (`SPIX_Geocodes_Point`)** is created on the `Point` column in the `LocationGeometry` table to optimize geographic queries.
 
