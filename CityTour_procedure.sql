@@ -127,8 +127,7 @@ BEGIN
 		FOR JSON PATH, WITHOUT_ARRAY_WRAPPER
 	);
 	
-	-- Outupt result as GEOJson data
+	-- Output result as GEOJson data
 	SELECT @featureCollection as result;
-	SELECT * FROM #PREPARED
 
 END;
