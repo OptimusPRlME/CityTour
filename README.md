@@ -89,7 +89,7 @@ Links tags to specific locations.
 
 ## Installation
 To set up the database, execute the provided SQL script `CityTour_install.sql` in **SQL Server Management Studio (SSMS)** or any compatible database system that supports **T-SQL**,
-or restore provided backup file. Database was created and tested in `Microsoft SQL Server 2019 (RTM-GDR) (KB5046859) - 15.0.2130.3 (X64)`
+or restore provided backup file. Database was created and tested in **Microsoft SQL Server 2019 (RTM-GDR) (KB5046859) - 15.0.2130.3 (X64)** and **SQL Server Management Studio (SSMS) 20.2**
 
 ## Importing Data
 A **staging table (`DataStaging`)** is used for importing data from a CSV file. To import data:
